@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featured Speakers</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>View our Featured Speakers for the Event</h1>
+      <p>
+        Speakers are core contributors and industry thought leaders working at
+        <span class="blue-text">companies</span> that push for innovation.
+      </p>
+    </header>
+
+    <main>
+      <section id="speaker-details" class="hidden">
+        <button
+          class="close-button"
+          id="close-details"
+          aria-label="Close speaker details"
+        >
+          &times;
+        </button>
+        <div class="details-container">
+          <div class="details-left">
+            <figure>
+              <img
+                src=""
+                alt="Speaker Image"
+                id="details-img"
+                class="details-image"
+              />
+            </figure>
+            <section>
+              <h3 id="details-name">Speaker Name</h3>
+              <p class="position" id="details-title">Speaker Position</p>
+              <p class="company" id="details-company">Company Name</p>
+              <div class="logos">
+                <img src="./assets/leaf.png" alt="simple-icon" class="logo" />
+                <img src="./assets/twitter.png" alt="X Logo" class="logo" />
+                <img
+                  src="./assets/linkedin.png"
+                  alt="LinkedIn Logo"
+                  class="logo"
+                />
+              </div>
+            </section>
+          </div>
+          <div class="details-right">
+            <p id="details-description">
+              Monotonectally synergize business communities rather than
+              client-centric convergence. Assertively unleash cross-platform
+              best practices rather than pandemic total linkage. Synergistically
+              monetize parallel infomediaries whereas 2.0 mindshare.
+              Dramatically pursue real-time markets through e-business strategic
+              theme areas.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="speaker-section">
+        <button class="arrow arrow--left" aria-label="Scroll left">
+            &#10094;
+        </button>
+        <div class="speakers" aria-labelledby="speakers-heading">
+          <article class="speaker-card">
+            <figure>
+              <img
+                src="./assets/image1.png"
+                alt="John Doe, Chief Marketing Officer at Acme Corp"
+                class="speaker-image"
+                onclick="showSpeakerDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', './assets/image1.png', 'Description of John Doe.')"
+              />
+              <figcaption>
+                <h3>John Doe</h3>
+                <p class="position">Chief Marketing Officer</p>
+                <p class="company">Acme Corp</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="speaker-card">
+            <figure>
+              <img
+                src="./assets/image2.png"
+                alt="Jane Smith, Chief Engagement Officer at Acquia"
+                class="speaker-image"
+                onclick="showSpeakerDetails('Jane Smith', 'Chief Engagement Officer', 'Acquia', './assets/image2.png', 'Description of Jane Smith.')"
+              />
+              <figcaption>
+                <h3>Jane Smith</h3>
+                <p class="position">Chief Engagement Officer</p>
+                <p class="company">Acquia</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="speaker-card">
+            <figure>
+              <img
+                src="./assets/image3.png"
+                alt="Mike Johnson, Chief Technical Developer at Pantheon"
+                class="speaker-image"
+                onclick="showSpeakerDetails('Mike Johnson', 'Chief Technical Developer', 'Pantheon', './assets/image3.png', 'Description of Mike Johnson.')"
+              />
+              <figcaption>
+                <h3>Mike Johnson</h3>
+                <p class="position">Chief Technical Developer</p>
+                <p class="company">Pantheon</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="speaker-card">
+            <figure>
+              <img
+                src="./assets/image4.png"
+                alt="Lisa Brown, Chief Marketing Officer at Specbee"
+                class="speaker-image"
+                onclick="showSpeakerDetails('Lisa Brown', 'Chief Marketing Officer', 'Specbee', './assets/image4.png', 'Description of Lisa Brown.')"
+              />
+              <figcaption>
+                <h3>Lisa Brown</h3>
+                <p class="position">Chief Marketing Officer</p>
+                <p class="company">Specbee</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+        <button class="arrow arrow--right" aria-label="Scroll right">
+            &#10095;
+        </button>
+      </section>
+     
+      <nav class="button-container">
+        <button class="program-button">See the program</button>
+      </nav>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
